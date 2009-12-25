@@ -1,0 +1,8 @@
+config/database.yml
+log/*
+db/schema.rb
+._*
+*.swp
+mkmf.log
+cap.log
+err
