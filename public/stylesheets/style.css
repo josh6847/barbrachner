@@ -205,7 +205,7 @@ form.searchform input.button {
 
 #main-wide {
 	float: left;
-	margin-left: 15px;
+	margin: 8px 0 0 15px;
 	padding: 0;
 	width: 70%;		
 }
