@@ -198,7 +198,7 @@ form.searchform input.button {
 /* main */
 #main {
 	float: left;
-	margin-left: 15px;
+	margin: 8px 0 0 15px;
 	padding: 0;
 	width: 50%;		
 }
@@ -233,7 +233,7 @@ form.searchform input.button {
 #sidebar {
 	float: left;
 	width: 23%;
-	margin: 0;	padding: 0; 
+	margin: 8px 0 0 0;	padding: 0; 
 	display: inline;		
 }
 #sidebar ul.sidemenu {
@@ -270,7 +270,8 @@ form.searchform input.button {
 #rightbar {
 	float: right;
 	width: 23%;
-	padding: 0; margin:0;		
+	padding: 0; 
+	margin: 8px 0 0 0;		
 }
 
 /* Footer */
