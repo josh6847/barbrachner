@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
     @index = "current"
+    render :layout => 'application'
   end
 
   def about

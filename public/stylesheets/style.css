@@ -82,12 +82,14 @@ acronym {
 }
 blockquote {
 	margin: 15px;
- 	padding: 0 0 0 20px;  	
+ 	padding: 0 0 0 5px;  	
   	background: #FAFAFA;
-	border: 1px solid #f2f2f2; 
-	border-left: 4px solid #4284B0;   
-	color: #4284B0;
-	font: bold 1.2em/1.5em Georgia, 'Bookman Old Style', Serif; 
+	border: 4px solid #f2f2f2; 
+	/* border-left: 4px solid #4284B0; */   
+	/*color: #4284B0;*/
+	color: black;
+	font: bold 1.0em/1.5em Georgia, 'Bookman Old Style', Serif; 
+	width: 160px;
 }
 
 /* form elements */
@@ -108,11 +110,11 @@ input {
 	color:#777;
 }
 textarea {
-	width:300px;
+	width:400px;
 	padding:2px;
 	font: normal 1em Verdana, sans-serif;
 	border:1px solid #eee;
-	height:100px;
+	height:200px;
 	display:block;
 	color:#777;
 }
@@ -201,6 +203,13 @@ form.searchform input.button {
 	width: 50%;		
 }
 
+#main-wide {
+	float: left;
+	margin-left: 15px;
+	padding: 0;
+	width: 70%;		
+}
+
 .post-footer {
 	background-color: #FAFAFA;
 	padding: 5px; margin: 20px 15px 0 15px;
@@ -229,7 +238,7 @@ form.searchform input.button {
 }
 #sidebar ul.sidemenu {
 	list-style:none;
-	margin:10px 0 10px 15px;
+	margin:10px 0 30px 15px;
 	padding:0;		
 }
 #sidebar ul.sidemenu li {
@@ -272,7 +281,7 @@ form.searchform input.button {
 	border-top: 5px solid #568EB6;
 	margin: 0; padding: 0; 
 	height: 50px;	  
-	font-size: 95%;		
+	font-size: 95%;	
 }
 #footer a { 
 	text-decoration: none; 
@@ -348,3 +357,18 @@ form.searchform input.button {
 .clear { clear: both; }
 .green {	color: #9EC630; }
 .gray  {	color: #BFBFBF; }
+
+.contact {
+    margin:10px; padding: 0; margin-left:20px;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA;	
+	width:500px;
+}
+
+form.paypal {
+	width:30px;
+	height:30px;
+	margin-left:30px; 
+	padding: 0px;
+	background-color: white;
+}

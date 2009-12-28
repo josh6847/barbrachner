@@ -10,6 +10,8 @@
 	<meta name="Robots" content="index,follow" />
 	
 	<%= stylesheet_link_tag 'style' %>
+	<%= javascript_include_tag :defaults %>
+	
 	<title>Barb Rachner Ministries</title>
 </head>
 
@@ -65,28 +67,14 @@
 			<p>&quot;The <i>words</i> you speak have the <i>power</i> to transform.&quot;</p>		
 			<p class="align-right">- Barb Rachner</p>
 			</blockquote>		
-			<div style="height:75px"></div>			
+			<div style="height:75px"></div>
 		
 		</div>
 			
-		<div id="main">	
+		<div id="main-wide">	
 			<%= yield %>
 			<div style="height:75px"></div>
 		</div>		
-		
-		<div id="rightbar">
-			
-			<h1>Quotes</h1>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus vitae risus vitae lorem iaculis placerat. Aliquam sit amet felis. Etiam congue. Donec risus risus, pretium ac, tincidunt eu, tempor eu, quam. Morbi blandit mollis magna. Suspendisse eu tortor. Donec vitae felis nec ligula blandit rhoncus. </p>	
-				
-			<h1>Lorem Ipsum</h1>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
-			Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
-			posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
-			odio, ac blandit ante orci ut diam.</p>
-		
-			<div style="height:75px"></div>
-		</div>
 			
 	<!-- content-wrap ends here -->		
 	</div>
