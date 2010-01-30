@@ -1,19 +1,19 @@
 class HomeController < ApplicationController
   def index
-    @index = "current"
+    @index = true
     render :layout => 'application'
   end
 
   def about
-    @about = "current"
+    @about = true
   end
 
   def contact
-    @contact = "current"
+    @contact = true
   end
 
   def books
-    @books = "current"
+    @books = true
   end
   
   def method_missing(*args)
