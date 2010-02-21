@@ -3,11 +3,11 @@
 * { padding: 0; margin: 0; }
 
 body {
-	margin: 0;
+	margin:	50px 0;
 	padding: 0;
 	font: .70em/1.5em  Verdana, Tahoma, Helvetica, sans-serif;
 	color: #666666; 
-	background: #A9BAC3 url(/images/bg.gif) repeat-x;
+	background: #A9BAC3	url(/images/bg-sky.jpg) repeat-x;
 	text-align: center;
 }
 
@@ -161,6 +161,7 @@ form.searchform input.button {
 	width: 820px; height: 100%;
 	margin: 0 auto;	
 	text-align: left;
+	border: 10px solid #ddddff;
 }
 #content-wrap {
 	clear: both;
@@ -277,8 +278,8 @@ form.searchform input.button {
 /* Footer */
 #footer { 
 	clear: both; 
-	color: #FFF; 
-	background: #A9BAC3; 
+	/*color: #FFF; */
+	/*background: #A9BAC3; */
 	border-top: 5px solid #568EB6;
 	margin: 0; padding: 0; 
 	height: 50px;	  
@@ -287,7 +288,7 @@ form.searchform input.button {
 #footer a { 
 	text-decoration: none; 
 	font-weight: bold;	
-	color: #FFF;
+	/*color: #FFF;*/
 }
 #footer .footer-left{
 	float: left;
@@ -373,3 +374,4 @@ form.paypal {
 	padding: 0px;
 	background-color: white;
 }
+
