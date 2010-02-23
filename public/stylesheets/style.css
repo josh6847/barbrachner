@@ -210,7 +210,7 @@ form.searchform input.button {
 
 #main-wide {
 	float: left;
-	margin: 8px 0 0 15px;
+	margin: 0 0 0 15px;
 	padding: 0;
 	width: 70%;		
 }
@@ -370,7 +370,7 @@ form.searchform input.button {
 .contact {
     margin:10px; padding: 0; margin-left:20px;
 	border: 1px solid #f2f2f2; 
-	background-color: #FAFAFA;	
+	background-color: #E0E0E0;
 	width:500px;
 }
 
@@ -424,7 +424,7 @@ form.paypal {
 	float:left;
 	/*background: url(../images/bg-gallery.gif) no-repeat;*/
 	background: #E8E8E8;
-	border: 2px dotted #999;
+	/*border: 2px dotted #999;*/
 }
 #carousel div ul{
 	margin:0;
@@ -437,10 +437,10 @@ form.paypal {
 }
 #carousel div li{
 	float:left;
-	width:136px;
+	width:125px;
 	overflow:hidden;
-	padding:10px 20px 3px 3px;
-	height:253px;
+	padding:22px 19px 3px 17px;
+	height:90px;
 }
 #carousel div ul .link{
 	white-space:nowrap;
