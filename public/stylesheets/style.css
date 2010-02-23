@@ -203,7 +203,7 @@ form.searchform input.button {
 /* main */
 #main {
 	float: left;
-	margin: 8px 0 0 15px;
+	margin: 0px 0 20px 15px;
 	padding: 0;
 	width: 50%;		
 }
@@ -238,7 +238,8 @@ form.searchform input.button {
 #sidebar {
 	float: left;
 	width: 23%;
-	margin: 8px 0 0 0;	padding: 0; 
+	/*margin: 8px 0 0 0;*/
+	padding: 0; 
 	display: inline;		
 }
 #sidebar ul.sidemenu {
@@ -276,7 +277,7 @@ form.searchform input.button {
 	float: right;
 	width: 23%;
 	padding: 0; 
-	margin: 8px 0 0 0;		
+	/*margin: 8px 0 0 0;*/
 }
 
 /* Footer */
@@ -381,3 +382,113 @@ form.paypal {
 	background-color: white;
 }
 
+
+/*CAROUSEL*/
+.carousel-holder{
+	width:906px;
+	height:100px;
+	margin:-15px 0 50px 0;
+	padding: 15px 0 0 0;
+}
+#carousel{
+	clear:both;
+}
+#carousel{
+	width:906px;
+	height:100px;
+}
+#carousel a.link-prev,
+#carousel a.link-next {
+	margin:55px 0 0;
+	font-size:20px;
+	height:48px;
+	line-height:50px;
+	text-align:center;
+	text-decoration:none;
+	width:24px;
+}
+#carousel .link-prev{
+	float:left;
+	background: url(../images/gallery-btn-left.gif) no-repeat;
+}
+#carousel .link-next{
+	float:right;
+	background: url(../images/gallery-btn-right.gif) no-repeat;
+}
+#carousel div.holder{
+	width:811px;
+	padding:0 4px;
+	height:140px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+	/*background: url(../images/bg-gallery.gif) no-repeat;*/
+	background: #E8E8E8;
+	border: 2px dotted #999;
+}
+#carousel div ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:99999px;
+}
+#carousel div li{
+	float:left;
+	width:142px;
+	overflow:hidden;
+	padding:13px 14px 0;
+	height:253px;
+}
+#carousel div ul .link{
+	white-space:nowrap;
+}
+#carousel div ul em{
+	display:block;
+	width:109px;
+	height:151px;
+	padding:16px 12px 9px 21px;
+	background:url(../images/card.png) no-repeat;
+}
+#carousel div ul div.label{
+	border:3px solid #93a2ab;
+	height:35px;
+	width:125px;
+	background:#e8dcb0;
+	margin:5px 0 0;
+	padding:0 0 0 11px;
+	color:#09220a;
+	font:bold 10px Georgia, Arial, Helvetica, sans-serif;
+}
+#carousel div ul div.label .wrap-label{
+	display:table;
+	height:35px;
+	width:125px;
+}
+#carousel div ul div.label .wrap-label div{
+	display:table-cell;
+	vertical-align:middle;
+}
+#carousel div ul li .link{
+	border:3px solid #93a2ab;
+	background:#06170f;
+	height:16px;
+	width:136px;
+	margin:5px 0 0;
+}
+#carousel ul div.link span{
+	float:left;
+	width:127px;
+	font:10px/13px Georgia, Helvetica, sans-serif;
+	color: #e8dcb0;
+	overflow:hidden;
+	margin:1px 0 0;
+	padding:0 0 0 1px;
+	background: url(../images/arrow.gif) no-repeat 5px 3px;
+	
+}
+#carousel ul div.link span a{
+	padding:0 10px 0 19px;
+}

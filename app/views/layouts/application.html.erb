@@ -9,9 +9,36 @@
 	<meta name="Author" content="Josh Rachner - josh@joshrachner.com" />
 	<meta name="Robots" content="index,follow" />
 	
-	<%= stylesheet_link_tag 'style' %>
-	<link rel="shortcut icon" href="/favicon.ico" />
 	<title>Barb Rachner Ministries</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<%= stylesheet_link_tag 'style', :media => 'all' %>
+	<%= javascript_include_tag 'jquery-1.3.1.min', "preload_images", 'jquery.galleryScroll.1.4.5.pack' %>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#carousel').galleryScroll({
+			btPrev: 'a.link-prev',
+			btNext: 'a.link-next',
+			holderList: 'div',
+			scrollElParent: 'ul',
+			scrollEl: 'li',
+			slideNum: false,
+			duration : 1000,
+			step: false,
+			circleSlide: true,
+			disableClass: 'disable',
+			autoSlide:1000,
+			funcOnclick: null
+		});
+		
+		$(document).ready(function(){
+		  $.preloadCssImages();
+		});
+		
+	});
+	</script>
+	
 </head>
 
 <body>
@@ -39,13 +66,52 @@
 			<%= @books ? '<li id="current">' : '<li>' %><a href="/books"><span>Books</span></a></li>			
 		</ul>											
 	</div>	
+	<div class="carousel-holder">
+			<div id="carousel">
+				<!--<a href="#" class="link-prev"></a>-->
+				<div class="holder">
+					<ul>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+						<li>
+							Image Here
+						</li>
+
+					</ul>
+				</div>
+				<!--<a href="#" class="link-next"></a>-->	
+			</div>
+		</div>
 				
 	<!-- content-wrap starts here -->
 	<div id="content-wrap">		
 											
-		<img src="images/headerphoto.jpg" width="820" height="120" alt="headerphoto" class="no-border" />
-		
-		<div id="sidebar" >							
+		<div id="sidebar">							
 				
 			<h1>Sidebar Menu</h1>
 			<ul class="sidemenu">
@@ -70,10 +136,10 @@
 			<div style="height:75px"></div>			
 		
 		</div>
+
 			
 		<div id="main">	
 			<%= yield %>
-			<div style="height:75px"></div>
 		</div>		
 		
 		<div id="rightbar">
