@@ -439,7 +439,7 @@ form.paypal {
 	float:left;
 	width:136px;
 	overflow:hidden;
-	padding:13px 14px 0;
+	padding:10px 20px 3px 3px;
 	height:253px;
 }
 #carousel div ul .link{
