@@ -177,7 +177,7 @@ form.searchform input.button {
 }
 #header img {
 	border:0;
-	margin-left:10px
+	/*margin-left:10px*/
 }
 #header h1#logo {
 	position: absolute;
@@ -387,7 +387,7 @@ form.paypal {
 .carousel-holder{
 	width:906px;
 	height:100px;
-	margin:-15px 0 50px 0;
+	margin:-15px 0 8px 0;
 	padding: 15px 0 0 0;
 }
 #carousel{
@@ -420,7 +420,7 @@ form.paypal {
 #carousel div.holder{
 	width:812px;
 	padding:0 4px;
-	height:140px;
+	height:100px;
 	overflow:hidden;
 	position:relative;
 	float:left;
@@ -441,7 +441,8 @@ form.paypal {
 	float:left;
 	width:125px;
 	overflow:hidden;
-	padding:22px 19px 3px 17px;
+	/*padding:22px 19px 3px 17px;*/
+	padding: 2px;
 	height:90px;
 }
 #carousel div ul .link{
