@@ -397,6 +397,8 @@ form.paypal {
 	width:906px;
 	height:100px;
 }
+
+
 #carousel a.link-prev,
 #carousel a.link-next {
 	margin:55px 0 0;
@@ -416,7 +418,7 @@ form.paypal {
 	background: url(../images/gallery-btn-right.gif) no-repeat;
 }
 #carousel div.holder{
-	width:811px;
+	width:812px;
 	padding:0 4px;
 	height:140px;
 	overflow:hidden;

@@ -1,38 +1,7 @@
-<%= render :partial => 'shared/head' %>
-<body>
-<!-- wrap starts here -->
-<div id="wrap">
-	<div id="header">				
-		
-		<img src="/images/br-title.png" onclick='javascript:window.location="/";' />
-		<!--<h1 id="logo">Barb<span class="green">Rachner</span><span class="gray">Ministries</span></h1>-->
-		<!--<h2 id="slogan">The words you speak have the power to transform.</h2>-->
-		
-		<form class="searchform" action="#">
-			<p>
-				<input type="text" name="search_query" class="textbox" />
-  				<input type="submit" name="search" class="button" value="Search" />
-			</p>
-		</form>
-			
-		<!-- Menu Tabs -->
-		<ul>
-			<%= @index ? '<li id="current">' : '<li>' %><a href="/index"><span>Home</span></a></li>
-			<%= @about ? '<li id="current">' : '<li>' %><a href="/about"><span>About</span></a></li>
-			<%= @contact ? '<li id="current">' : '<li>' %><a href="/contact"><span>Contact</span></a></li>
-			<%= @books ? '<li id="current">' : '<li>' %><a href="/books"><span>Books</span></a></li>		
-		</ul>											
-	</div>	
-	
-	<%= render :partial => 'shared/banner' %>
-				
-	<!-- content-wrap starts here -->
+	<%= render :partial => 'shared/header' %>
 	<div id="content-wrap">		
-											
 		<!--<img src="images/headerphoto.jpg" width="820" height="120" alt="headerphoto" class="no-border" />-->
-		
 		<div id="sidebar" >							
-				
 			<h1>Sidebar Menu</h1>
 			<ul class="sidemenu">
 				<li><a href="/index">Home</a></li>
@@ -40,7 +9,6 @@
 				<li><a href="/contact">Contact</a></li>
 				<li><a href="/books">Books</a></li>
 			</ul>		
-				
 			<h1>Site Links</h1>
 			<ul class="sidemenu">
 				<li><a href="http://www.alcc.org" target="_blank">Abundant Life</a></li>
@@ -48,44 +16,14 @@
 				<li><a href="#">link</a></li>	
 				<li><a href="#">link</a></li>											
 			</ul>		
-			
 			<blockquote>
-			<p>&quot;The <i>words</i> you speak have the <i>power</i> to transform.&quot;</p>		
-			<p class="align-right">- Barb Rachner</p>
+				<p>&quot;The <i>words</i> you speak have the <i>power</i> to transform.&quot;</p>		
+				<p class="align-right">- Barb Rachner</p>
 			</blockquote>		
 			<div style="height:75px"></div>
-		
 		</div>
-			
 		<div id="main-wide">	
 			<%= yield %>
 		</div>		
-			
-	<!-- content-wrap ends here -->		
 	</div>
-
-	<!-- footer starts here -->	
-	<div id="footer">
-		
-		<div class="footer-left">
-			<p class="align-left">			
-			&copy; 2009 <strong>Barb Rachner Ministries</strong>
-			</p>		
-		</div>
-		
-		<div class="footer-right">
-			<p class="align-right">
-				<a href="/index">Home</a>&nbsp;|&nbsp;
-	  			<a href="#">SiteMap</a>&nbsp;|&nbsp;
-				<a href="mailto:support@barbrachner.com">Support</a>
-			</p>
-		</div>
-		
-	</div>
-	<!-- footer ends here -->
-	
-<!-- wrap ends here -->
-</div>
-
-</body>
-</html>
+	<%= render :partial => 'shared/footer' %>
