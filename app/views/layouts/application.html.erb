@@ -1,15 +1,10 @@
 	<%= render :partial => 'shared/header' %>
 	<div id="content-wrap">		
-		<!--<img src="images/headerphoto.jpg" width="820" height="120" alt="headerphoto" class="no-border" />-->
+		<div id="main">	
+			<%= yield %>
+		</div>		
 		<div id="sidebar">							
-			<h1>Sidebar Menu</h1>
-			<ul class="sidemenu">
-				<li><a href="/index">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/contact">Contact</a></li>
-				<li><a href="/books">Books</a></li>
-			</ul>		
-			<h1>Site Links</h1>
+			<h1>Favorite Sites</h1>
 			<ul class="sidemenu">
 				<li><a href="http://www.alcc.org" target="_blank">Abundant Life</a></li>
 				<li><a href="http://www.kickdiabetes.org" target="_blank">Kick Diabettes</a></li>
@@ -17,18 +12,13 @@
 				<li><a href="#">link</a></li>									
 			</ul>		
 			<blockquote>
-				<p>&quot;The <i>words</i> you speak have the <i>power</i> to transform.&quot;</p>		
-				<p class="align-right">- Barb Rachner</p>
+				<span class="stitle">Daily Scripture</span>	
+				<p>
+					<b><i>Romans 10:9</i></b> - 
+					"That if you confess with your mouth the Lord Jesus and believe in your heart 
+					that God has raised Him from the dead, you will be saved."
+				</p>
 			</blockquote>		
-			<div style="height:75px"></div>			
-		</div>
-		<div id="main">	
-			<%= yield %>
-		</div>		
-		<div id="rightbar">
-			<h1>Daily Scripture</h1>
-			<p><i>Romans 10:9</i> - "That if you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved."</p>	
-			<div style="height:75px"></div>
 		</div>
 	</div>
 	<%= render :partial => 'shared/footer' %>

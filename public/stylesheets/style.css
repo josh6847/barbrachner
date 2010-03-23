@@ -45,7 +45,7 @@ ul span, ol span {
 
 /* images */
 img {
-	border: 2px solid #CCC;
+	border: 0 solid #CCC;
 }
 img.no-border {
 	border: none;
@@ -82,14 +82,14 @@ acronym {
 }
 blockquote {
 	margin: 15px;
- 	padding: 0 0 0 5px;  	
+ 	padding: 0 0 0 0px;  	
   	background: #FAFAFA;
 	border: 4px solid #f2f2f2; 
 	/* border-left: 4px solid #4284B0; */   
 	/*color: #4284B0;*/
 	color: black;
-	font: bold 1.0em/1.5em Georgia, 'Bookman Old Style', Serif; 
-	width: 160px;
+	font: 1.0em/1.5em Georgia, 'Bookman Old Style', Serif; 
+	width: 170px;
 }
 
 /* form elements */
@@ -158,7 +158,7 @@ form.searchform input.button {
 ************************/
 #wrap {
 	background: #FFF;
-	width: 820px; height: 100%;
+	width: 850px; height: 100%;
 	margin: 0 auto;	
 	text-align: left;
 	border: 10px solid #ddddff;
@@ -167,6 +167,10 @@ form.searchform input.button {
 	clear: both;
 	margin: 0; padding: 0;	
 	background: #FFF;
+}
+#content-wrap .blurb {
+	border-bottom: 2px solid #F2F2F2;
+	margin: 0 0 35px 0;
 }
 
 /* header */
@@ -203,9 +207,9 @@ form.searchform input.button {
 /* main */
 #main {
 	float: left;
-	margin: 0px 0 20px 15px;
-	padding: 0;
-	width: 50%;		
+	margin: 0px 0 75px 15px;
+	padding: 15px 0 0 0;
+	width: 72%;		
 }
 
 #main-wide {
@@ -239,7 +243,7 @@ form.searchform input.button {
 	float: left;
 	width: 23%;
 	/*margin: 8px 0 0 0;*/
-	padding: 0; 
+	padding: 15px 0 0 0; 
 	display: inline;		
 }
 #sidebar ul.sidemenu {
@@ -494,4 +498,76 @@ form.paypal {
 }
 #carousel ul div.link span a{
 	padding:0 10px 0 19px;
+}
+
+/*preload classes*/
+.svw {width: 50px; height: 20px; background: #fff;}
+.svw ul {position: relative; left: -999em;}
+
+/*core classes*/
+.stripViewer { 
+position: relative;
+overflow: hidden; 
+border: 5px solid gray;/*#ff0000;  */
+margin: 0 0 1px 50px;
+}
+.stripViewer ul { /* this is your UL of images */
+margin: 0;
+padding: 0;
+position: relative;
+left: 0;
+top: 0;
+width: 1%;
+list-style-type: none;
+}
+.stripViewer ul li { 
+float:left;
+}
+.stripTransmitter {
+overflow: auto;
+width: 1%;
+margin-left:50px;
+}
+.stripTransmitter ul {
+margin: 0;
+padding: 0;
+position: relative;
+list-style-type: none;
+}
+.stripTransmitter ul li{
+width: 20px;
+float:left;
+margin: 0 1px 1px 0;
+}
+.stripTransmitter a{
+font: bold 10px Verdana, Arial;
+text-align: center;
+line-height: 22px;
+background: #787878 ;
+color: #fff;
+text-decoration: none;
+display: block;
+}
+.stripTransmitter a:hover, a.current{
+background: #fff;
+color: black;
+}
+
+/*tooltips formatting*/
+.tooltip
+{
+padding: 0.5em;
+background: #fff;
+color: #000;
+border: 5px solid #dedede;
+}
+
+ul li img {
+	width:500px;
+}
+.stitle {
+	font: bold 1em 'Trebuchet MS', Arial, Sans-serif;
+	font-size: 1.5em; 
+	color: #6297BC;
+	font-weight: bold;
 }
