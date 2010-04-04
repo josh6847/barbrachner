@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
   def index
     @index = true
-    #render :layout => 'application'
   end
 
   def about
@@ -14,6 +13,10 @@ class HomeController < ApplicationController
 
   def kenya
     @kenya = true
+  end
+  
+  def shop
+    @shop = true
   end
   
   def method_missing(*args)

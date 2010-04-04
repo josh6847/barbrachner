@@ -1,8 +1,9 @@
-//slide viewer
+/* slide viewer */
 $(window).bind("load", function() { 
-		$("div#gallery").slideView() });
+	$("div#galone").slideView() 
+});
 		
-//carousel		
+/* carousel */
 $(document).ready(function(){
 	$('#carousel').galleryScroll({
 		btPrev: 'span a.link-prev',

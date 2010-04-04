@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	font: .70em/1.5em  Verdana, Tahoma, Helvetica, sans-serif;
 	color: #666666; 
-	background: #A9BAC3	url(/images/bg-sky.jpg) repeat-x;
+	background: #A9BAC3	url(/images/bamboo.jpg) repeat;
 	text-align: center;
 }
 
@@ -60,7 +60,7 @@ a img {
   border: 2px solid #568EB6;
 }
 a:hover img {  
-  border: 2px solid #CCC !important; /* IE fix*/
+  /*border: 2px solid #CCC !important; /* IE fix*/*/
   border: 2px solid #568EB6;
 }
 
@@ -181,7 +181,7 @@ form.searchform input.button {
 }
 #header img {
 	border:0;
-	/*margin-left:10px*/
+	padding: 10px;
 }
 #header h1#logo {
 	position: absolute;
@@ -566,8 +566,22 @@ ul li img {
 	width:500px;
 }
 .stitle {
+	/*
 	font: bold 1em 'Trebuchet MS', Arial, Sans-serif;
 	font-size: 1.5em; 
 	color: #6297BC;
 	font-weight: bold;
+	*/
+	font-weight:bold;
+	color:#6297BC;
+	padding:5px;
+}
+#header .banner {
+	background: none;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+}
+#header .banner:hover img {
+	border:0;
 }
